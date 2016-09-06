@@ -1,0 +1,458 @@
+3.1
+
+Variable nb en numerique
+Début
+Ecrire "Entrez votre nombre"
+Lire nb
+Si (nb<0) alors
+Ecrire "Nombre negatif"
+Sinon
+Ecrire "nombre positif"
+FinSi
+Fin
+
+3.2
+
+Variable n,m en numérique
+Début
+Ecrire "Entrez vos deux chiffre "
+Lire n
+Lire m
+Si ((n <o et m <0) ou (n>o et m>o)) alors
+Ecrire "n négatif", "m negatif"
+sinon
+Ecrire "n positif", "m positif"
+FinSi
+Fin
+
+3.3
+
+Variable a,b,c en Caractere
+Début
+Ecrire "Rentrez les trois nom à la suite"
+Lire a
+Lire b
+Lire c
+Si (a<b) et (b<c) alors
+Entrer "les trois nom sont dans l'ordre"
+Sinon
+Entrer "Il ne sont pas dans l'ordre"
+FinSi
+Fin
+
+3.4
+
+Variable n en numérique
+Début
+Ecrire "Entrez un nombre"
+Lire n
+Si n = 0 alors
+Ecrire "n est nul"
+SinonSi n<o alors
+Ecrire "n est negatif"
+Sinon
+Ecrire "n est positif"
+FinSi
+Fin
+
+3.5
+
+Variable n,m en numérique
+Début
+Ecrire "Entrez vos deux nombres"
+Lire n
+Lire m
+Si ((n=0) ou (m=0)) alors
+Ecrire "Le nombre n est nul"
+SinonSi ((n<0) et (m<0) ou (n>0 et n>0)) alors
+Ecrire " Le nombre est positif"
+Sinon
+Ecrire "le produit est negatif"
+FinSi
+Fin
+
+3.6
+
+Variable age en numerique
+Début
+Ecrire " Entrez l'age de l'enfant"
+Lire age
+Si (age>=12) alors
+Ecrire "Cadet"
+SinonSi (age>=10) alors
+Ecrire "Minime"
+SinonSi (age>=8) alors
+Ecrire "Pupille"
+SinonSi (age>=6) alors
+Ecrire "Poussin"
+FinSi
+Fin
+
+Variable age en numérique
+Début
+Ecrire "Entrer l'age de l'enfant"
+Lire age
+Si (age=<6) alors
+Ecrire "Poussin"
+SinonSi (age=<8) alors
+Ecrire "Pupille"
+SinonSi (age=<10) alors
+Ecrire "Minime"
+Sinonsi (age=<12) alors
+Ecrire "Cadet"
+FinSi
+Fin
+
+4.1
+
+Début
+Si (tutu < toto + 4) et (tata <> "Ok") alors
+Tutu = tutu -1
+Sinon
+Tutu = + 1
+FinSi
+Fin
+
+4.2
+
+
+Varible h,m en numérique
+Début
+Ecrire "heures"
+Lire h
+Ecrire "minutes"
+Lire m
+m = m +1
+Si (m= 60) alors
+m = 0
+h = h+1
+Si (h=24) alors
+h = 0
+FinSi
+FinSi
+Ecrire "Dans une minute, il sera",h,"heures",m,"minutes"
+Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.5
+
+Variable sexe en Caractere
+Variable age en Numérique
+Variable C1, C2 en Booleen
+
+début
+Ecrire "Ecrivez votre age"
+Lire age
+Ecrire "Ecrivez votre sexe"
+Lire sexe
+
+C1= (sexe=M) et (age>20)
+C2= (sexe=F) et (age<35)
+Si (C1 ou C2) alors
+Ecrire "imposable"
+Sinon
+Ecrire "Non imosable"
+FinSi
+Fin
+
+4.6
+
+Variable a,b,c,d en Numerique
+Variable C1,C2,C3,C4 en Booleen
+
+Début
+Ecrire "Le score des quatres candidats"
+Lire a
+Lire b
+Lire c
+Lire d
+C1= a>50
+C2=(b>50)ou(c>50)ou(d>50)
+C3=(a>=b) et (a>=c) et (a>=d)
+C4= a>= 12.5
+Si (c1) alors
+Ecrire "Elu au premier tour"
+Sinonsi (c2 ou non (C4)) alors
+Ecrire "Battue, elimine, sorti !!"
+Sinonsi (c3) alors
+Ecrire "Ballotage défavorable"
+FinSi
+Fin
+
+4.7
+
+
+Variable age,permis,assur,acc en caractere
+Variable C1,C2,C3 en Booleen
+Variable situ en caractere
+																	( Il faut penser au variable possible, ne pas oublier les variable Booleen afin d'allez plus vite)
+Début
+Ecrire "Entrez votre age"
+Lire age
+Ecrire "Entrez le nb d'anné de permis"
+Lire perm
+Ecrire "Entrez le nombre d'années d'assurance"
+Lire assur
+Ecrire "Entrez le nombre d'accidents"
+Lire accid
+
+C1 ← age >= 25
+C2 ← perm >= 2
+C3 ← assur > 1
+Si (Non(C1) ET Non(C2)) Alors
+Si (acc = 0) Alors
+situ ← "Rouge"
+Sinon
+situ ← "Refusé"
+FinSi
+SinonSi ((Non (C1) ET C2) OU (C1 ET Non(C2))) Alors
+Si (acc = 0) Alors
+situ ← "Orange"
+SinonSi (acc = 1) Alors
+situ ← "Rouge"
+Sinon
+situ ← "Refusé"
+FinSi
+Sinon
+Si (acc = 0) Alors
+situ ← "Vert"
+SinonSi (acc = 1) Alors
+situ ← "Orange"
+SinonSi (acc = 2) Alors
+situ ← "Rouge"
+Sinon
+situ ← "Refusé"
+FinSi
+Si (C3) Alors
+Si (situ = "Rouge") Alors
+situ ← "Orange"
+SinonSi (situ = "Orange") Alors
+situ ← "Vert"
+SinonSi (situ = "Vert") Alors
+situ ← "Bleu"
+FinSi
+FinSi
+Ecrire "Votre situation : ", situ
+Fin
+
+
+
+// Exercice 5.1
+Variable rep en Numerique
+Debut
+rep ← 0
+	Ecrire "Entrez un nombre entre 1 et 3"
+	TantQue rep < 1 ou rep > 3
+		Lire rep 
+		Si rep < 1 ou rep > 3 Alors
+			Ecrire "Saisie Erronée, Recommencez"
+		FinSi
+	FinTantQue	
+Fin
+
+
+// Exercice 5.2
+Variable rep en Numerique
+Debut
+rep ← 0
+	Ecrire "Entrez un nombre entre 10 et 20"
+	TantQue rep < 10 et rep > 20
+		Lire rep
+			Si rep < 10 Alors
+				Ecrire "Plus grand !"
+			SinonSi rep >20 Alors
+				Ecrire "Plus petit !"
+			Sinon 
+				Ecrire "Its Ok"
+			FinSi
+	FinTantQue
+	
+Fin
+
+
+// Exercice 5.3
+Variable nb en Numerique
+Debut
+nb ← 0,+1,+2,+3,+4,+5,+6,+7+,+8,+9,+10
+
+	Ecrire "Entrez un nombre"
+	Lire nombre
+	Ecrire " Les nombres sont :",nb
+	
+Fin
+
+ // Exercice 5.3
+Variable N, Stop en Entier
+Debut
+	Ecrire "Entrez un nombre : "
+	Lire N
+	Stop ← N+10
+	Ecrire "Les 10 nombres suivants sont : "
+	TantQue N < Stop
+   	N ← N+1
+   	Ecrire N
+	FinTantQue
+Fin
+
+
+// Exercice 5.4
+Variable N,Stop en Numerique
+Debut
+	Ecrire "Entrez un nombre"
+	Lire N
+	Pour Stop ← N+10
+	Ecrire "Les 10 nombres suivants sont :",Stop
+	Stop suivant
+Fin
+
+
+// Exercice 5.5
+Variable N,table en Numerique
+Debut
+	Ecrire "Entrez un nombre"
+	Lire N
+	Ecrire " La table de multiplication de ce nombre est :"
+	Pour table ← 1 à 10
+	Ecrire N, "x", table, "=",n*table
+	table suivant
+Fin
+
+
+// Exercice 5.6
+Variable N,i,t en Numerique
+Debut
+	Ecrire "Entrez un nombre"
+	Lire N
+	t ← 0
+	Pour i ← 1 à N
+	t ← t+i
+	i suivant
+	Ecrire "Le résultat est :", t
+	Fin
+
+// Exercice 5.7
+	Variable N,i,F en Numerique
+	Debut
+		Ecrire "Entrez un nombre"
+		Lire N
+		F ← 1
+		Pour i ← 2 à N
+		F ← F*i
+		i suivant
+		Ecrire "La factorielle est :",F
+	Fin
+
+
+// Exercice 5.8
+Variable N,i,gn en Numerique
+Debut
+gn ← 0
+Pour i ← 1 à 20
+	Ecrire "Entrez un numéros"
+	Lire N
+	Si i = 1 ou n > gn Alors
+	gn ← N
+	FinSi
+i Suivant
+Ecrire " Le nombre le plus grand était :",gn
+Fin
+
+Variable N,i,gn,pos en Numerique
+Début
+gn ← 0
+Pour i ← 1 à 20
+Ecrire "Entrez votre nombre"
+Lire N
+Si i = 1 ou n > gn Alors
+gn ← N
+pos ← i
+FinSi
+i suivant
+Ecrire " Le nombre le plus grand était :", gn
+Ecrire " La position était la :", pos
+Fin
+
+
+// Exercice 5.9
+
+Variable N,i,gn,pos en Numerique
+Début
+N ← 1
+i ← 0
+gn ← 0 
+TantQue N <> 0
+	Ecrire "Entrez votre nombre"
+	ire N
+	i ← i + 1
+		Si i = 1 ou n > gn Alors
+		gn ← N
+		pos ← i
+		FinSi
+	FinTantQue
+Ecrire " Le nombre le plus grand était :", gn
+Ecrire " La position était la :", pos
+Fin
+
+
+
+// Exercice 5.10
+
+Variable E,somdue,M,Reste,nb5e,nb10e, en Numerique
+Début
+E ← 1
+somdue ← 0
+	TantQue E <> 0
+	Ecrire "Entrez votre montant :"
+	Lire E
+	somdue ← somdue + E
+	FinTantQue
+Ecrire "Vous devez :", somdue, "euros"
+Ecrire "Montant versé"
+Lire M
+Reste ← M - somdue
+nb10e ← 0
+	TantQue Reste >= 10
+	nb10e ← nb10e +1
+	Reste ← Reste - 10
+	FinTantQue
+nb5e ← 0
+	Si Reste >= 5
+	nb5e ← 1
+	Reste ← Reste -5
+	FinSi
+Ecrire "Rendu de la monaie :"
+Ecrire "Billets de 10 E :",nb10e
+Ecrire "Billets de 5 E :",nb5e
+Ecrire "¨Pièce de 1 E :",Reste
+Fin
+
+
+
+// Exercice 5.11
+Variable chance,nbc,cp,cj, i en Numerique
+Debut
+	Ecrire "Entrez le nombre de chevaux partants"
+	Lire cp
+	Ecrire "Entrez le nombre de chevaux joués"
+	Lire cj
+	nbc ← 1
+	chance ← 1
+	Pour i ← 1 à cj
+	nbc ← nbc * (i+cp-cj)
+	chance ← Chance * i
+	I suivant
+	Ecrire "Dans l'ordre une chance sur :",nbc
+	Ecrire "Dans le désordre, une chance sur :",nbc/chance
+	Fin

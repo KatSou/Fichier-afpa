@@ -1,0 +1,9 @@
+C:\Users\afpa\Documents\Projet perso\Bracket\Bracket\bin\Debug\Bracket.exe.config
+C:\Users\afpa\Documents\Projet perso\Bracket\Bracket\bin\Debug\Bracket.exe
+C:\Users\afpa\Documents\Projet perso\Bracket\Bracket\bin\Debug\Bracket.pdb
+C:\Users\afpa\Documents\Projet perso\Bracket\Bracket\obj\Debug\Bracket.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Projet perso\Bracket\Bracket\obj\Debug\Bracket.Form1.resources
+C:\Users\afpa\Documents\Projet perso\Bracket\Bracket\obj\Debug\Bracket.Properties.Resources.resources
+C:\Users\afpa\Documents\Projet perso\Bracket\Bracket\obj\Debug\Bracket.csproj.GenerateResource.Cache
+C:\Users\afpa\Documents\Projet perso\Bracket\Bracket\obj\Debug\Bracket.exe
+C:\Users\afpa\Documents\Projet perso\Bracket\Bracket\obj\Debug\Bracket.pdb

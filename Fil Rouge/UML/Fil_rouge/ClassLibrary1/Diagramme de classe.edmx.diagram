@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="774a1af66de645138029f3818df5cc25" Name="Diagram1" ZoomLevel="47">
+        <EntityTypeShape EntityType="Fil_rougeModel.Adresse" Width="1.5" PointX="4.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Fil_rougeModel.Client" Width="1.5" PointX="2.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Fil_rougeModel.Commande" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Fil_rougeModel.Commercial" Width="1.5" PointX="1.5" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Fil_rougeModel.Fournisseur" Width="1.5" PointX="15.375" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Fil_rougeModel.Fournit" Width="1.5" PointX="12.875" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Fil_rougeModel.Livrer" Width="1.5" PointX="4.875" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Fil_rougeModel.Produits" Width="1.5" PointX="10.375" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Fil_rougeModel.Rubrique" Width="1.5" PointX="11.875" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Fil_rougeModel.Sont_present" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Adresse__client___1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Livrer__adresse___2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Commande__client__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Commande__commer__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Livrer__commande__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Sont_pres__comma__25869641" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Fournit__fournis__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Fournit__produit__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Livrer__produit___2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.FK__Sont_pres__produ__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.Contient" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.Reference" ManuallyRouted="false" />
+        <AssociationConnector Association="Fil_rougeModel.S_occupe" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

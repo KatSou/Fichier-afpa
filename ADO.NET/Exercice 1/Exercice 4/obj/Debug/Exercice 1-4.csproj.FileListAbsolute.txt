@@ -1,0 +1,9 @@
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 4\bin\Debug\Exercice 4.exe.config
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 4\obj\Debug\Exercice 4.exe
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 4\obj\Debug\Exercice 4.pdb
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 4\bin\Debug\Exercice 4.exe
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 4\bin\Debug\Exercice 4.pdb
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 4\obj\Debug\Exercice 1-4.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 4\obj\Debug\Exercice_4.Form1.resources
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 4\obj\Debug\Exercice_4.Properties.Resources.resources
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 4\obj\Debug\Exercice 1-4.csproj.GenerateResource.Cache

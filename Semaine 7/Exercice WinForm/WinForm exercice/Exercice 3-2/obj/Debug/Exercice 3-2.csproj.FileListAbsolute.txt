@@ -1,0 +1,9 @@
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\WinForm exercice\Exercice 3-2\bin\Debug\Exercice 3-2.exe.config
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\WinForm exercice\Exercice 3-2\bin\Debug\Exercice 3-2.exe
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\WinForm exercice\Exercice 3-2\bin\Debug\Exercice 3-2.pdb
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\WinForm exercice\Exercice 3-2\obj\Debug\Exercice 3-2.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\WinForm exercice\Exercice 3-2\obj\Debug\Exercice_3_2.Form1.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\WinForm exercice\Exercice 3-2\obj\Debug\Exercice_3_2.Properties.Resources.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\WinForm exercice\Exercice 3-2\obj\Debug\Exercice 3-2.csproj.GenerateResource.Cache
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\WinForm exercice\Exercice 3-2\obj\Debug\Exercice 3-2.exe
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\WinForm exercice\Exercice 3-2\obj\Debug\Exercice 3-2.pdb

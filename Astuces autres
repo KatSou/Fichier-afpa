@@ -1,0 +1,8 @@
+  
+//// Un timer pour simuler une touche \\\\
+
+  private void timer1_Tick(object sender, EventArgs e)
+        {
+            SendKeys.Send("{a}");
+        }
+    

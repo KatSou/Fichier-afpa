@@ -1,0 +1,5 @@
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\DAL\bin\Debug\DAL.dll
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\DAL\bin\Debug\DAL.pdb
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\DAL\obj\Debug\DAL.dll
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\DAL\obj\Debug\DAL.pdb

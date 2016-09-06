@@ -1,0 +1,81 @@
+<html>
+ <head>
+ <meta charset="UTF-8">
+ <title>Formulaires</title>
+  </head>
+ <body>
+ <h1> <center>Nous lançons une grande enquête sur les anciens stagiaires </center> </h1>
+ <h5> <center>merci de nous répondre </center></h5>
+ <b>
+ <form method="get" action="http://bienvu.net/script.php">
+ <fieldset>
+<legend>Vos coordonées:</legend>
+<table border="1">
+<tr align="center">
+<td> Nom:</td>         <td><input   type="text" ></td>
+</tr>
+<tr align="center">
+<td>Prénom:            <td><input type="text"></td>
+</tr>
+<tr align="center">
+<td>Date de naissance: <td><input type="text"></td>
+</tr>
+<tr align="center">
+<td>Adresse:           <td><input type="text"></td>
+</tr>
+<tr align="center">
+<td>Ville:             <td><input type="text"></td>
+</tr>
+<tr align="center">
+<td>CP:                <td><input type="text"></td>
+</tr>
+<tr align="center">
+<td>Mail:              <td><input type="text"></td>
+</tr>
+</table>
+</fieldset>
+<br>
+<progress value="50" max="100">50 </progress>
+ 	
+</br>
+<fieldset>
+<input type="radio" name="homme" value="homme" />Vous êtes un homme <input type="radio" name="femme" value="femme" />Vous êtes une femme<br />
+</fieldset>
+<progress value="60" max="100">60 </progress>
+<br>
+
+</br>
+<select name="type_de_formation">
+<option value="Développeur">Développeur</option>
+<option value="Infographiste">Infographiste</option>
+<option value="Autres">Autres</option>	
+</select>
+<br>
+ <progress value="70" max="100">70 </progress>	
+</br>
+Si vous avez répondu autres, précisez: <input type="text"><br>
+
+</br>
+<select name="rénumération">
+<option value="<1000€"><1000€</option>
+<option value="<1500€"><1500€</option>
+<option value="<2000"><2000€</option>	
+</select>
+<br>
+ <progress value="80" max="100">80 </progress>	
+</br>
+En quelle année avez-vous suivi le stage afpa ? <input type="text"><br>
+</br>
+ 
+<textarea name="Commentaire" cols="50" rows="5">
+Vos commentaires
+</textarea><br>
+</br>
+<h10> merci d'avoir répondu au questionnaire</h10><br>
+</br>
+<progress value="100" max="100">100 </progress>
+ <input type="submit" value="validez" /><input type="submit" value="annulez">
+ </form>
+ </b>
+ </body>
+</html>

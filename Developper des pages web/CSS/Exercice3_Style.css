@@ -1,0 +1,73 @@
+header
+{
+	margin: 10px 20px 20px 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 90px;
+	border-style: dashed;
+	border-width: 0.5px;
+	
+}
+
+article
+{
+	margin: 20px 30% 20px 40px;
+	height: 450px;
+	padding-bottom: 10px;
+	border-style: dashed;
+	border-width: 0.5px;
+	position: absolute;
+	
+}
+
+#divtete
+{
+	margin :10px 10px 10px 10px;
+	padding-top: 30px;
+	background-color: #d6d6f5;
+	height: 120px;
+}
+
+h2
+{
+	margin-left: 20px;
+}
+
+#p-ent
+{
+	margin-left: 20px;
+}
+
+#p-art
+{
+	margin-left: 10px;
+}
+
+.teng 
+{
+	border-style: dashed;
+	border-width: 0.5px;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 20px 10px 20px 10px;
+}
+
+#divpied
+{
+	margin :10px 10px 10px 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #d6d6f5;
+}
+
+#divmenu
+{
+	margin: 150px 80px 20px 50px;
+	border-style: dashed;
+	border-width: 0.5px;
+	height: 600px;
+	width: 400px;
+	position: absolute;
+	top:0;
+	right: 0;
+}

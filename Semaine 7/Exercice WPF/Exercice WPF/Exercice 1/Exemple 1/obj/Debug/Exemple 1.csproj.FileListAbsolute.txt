@@ -1,0 +1,14 @@
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\bin\Debug\Exemple 1.exe.config
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\bin\Debug\Exemple 1.exe
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\bin\Debug\Exemple 1.pdb
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\Exemple 1.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\MainWindow.g.cs
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\App.g.cs
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\Exemple 1_MarkupCompile.cache
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\Exemple 1_MarkupCompile.lref
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\MainWindow.baml
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\Exemple 1.g.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\Exemple_1.Properties.Resources.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\Exemple 1.csproj.GenerateResource.Cache
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\Exemple 1.exe
+C:\Users\afpa\Documents\Semaine 7\Exercice WPF\Exercice WPF\Exercice 1\Exemple 1\obj\Debug\Exemple 1.pdb

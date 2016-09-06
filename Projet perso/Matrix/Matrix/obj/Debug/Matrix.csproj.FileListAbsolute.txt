@@ -1,0 +1,6 @@
+C:\Users\afpa\Documents\Projet perso\Matrix\Matrix\bin\Debug\Matrix.exe.config
+C:\Users\afpa\Documents\Projet perso\Matrix\Matrix\obj\Debug\Matrix.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Projet perso\Matrix\Matrix\bin\Debug\Matrix.exe
+C:\Users\afpa\Documents\Projet perso\Matrix\Matrix\bin\Debug\Matrix.pdb
+C:\Users\afpa\Documents\Projet perso\Matrix\Matrix\obj\Debug\Matrix.exe
+C:\Users\afpa\Documents\Projet perso\Matrix\Matrix\obj\Debug\Matrix.pdb

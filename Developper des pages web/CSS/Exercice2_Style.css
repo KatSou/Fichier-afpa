@@ -1,0 +1,15 @@
+#divUn
+{
+	background-image: linear-gradient(to bottom,#ffffff,#ecffe6);
+	width: 500px;
+	height: 300px;
+}
+span
+{
+	color:#e62e00;
+}
+
+input 
+{
+	margin-left: 100px;
+}

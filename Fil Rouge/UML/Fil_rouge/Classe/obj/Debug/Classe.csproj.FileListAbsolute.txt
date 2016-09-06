@@ -1,0 +1,11 @@
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\bin\Debug\Classe.exe.config
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\bin\Debug\Classe.exe
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\bin\Debug\Classe.pdb
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\bin\Debug\EntityFramework.dll
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\bin\Debug\EntityFramework.xml
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\obj\Debug\Classe.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\obj\Debug\Classe.exe
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Classe\obj\Debug\Classe.pdb

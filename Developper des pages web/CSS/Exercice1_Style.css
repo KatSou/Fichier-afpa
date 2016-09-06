@@ -1,0 +1,49 @@
+#divUn
+{
+	background-color:green;
+	width: 70%;
+	height: 70%;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+#divDeux
+{
+	background-color:red;	
+	width: 30%;
+	height : 70%;
+	position: absolute;
+	top:0;
+	right: 0;
+}
+
+#divTrois
+{
+	background-color:blue;	
+	width: 70%;
+	height: 30%;
+	position: absolute;
+	left: 0;
+	bottom: 0;	
+
+}
+
+#divQuatre
+{
+	background-color:yellow;	
+	width: 30%;
+	height :30%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#rond
+{
+	border: 1px;
+	background-color:white;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+}

@@ -1,0 +1,12 @@
+\\serveur\commun\Clément\Exercices\8-Développer avec CSharp\Solutions Visual Studio\7-Pendu\Pendu\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+\\serveur\commun\Clément\Exercices\8-Développer avec CSharp\Solutions Visual Studio\7-Pendu\Pendu\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+\\serveur\commun\Clément\Exercices\8-Développer avec CSharp\Solutions Visual Studio\7-Pendu\Pendu\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+\\serveur\commun\Clément\Exercices\8-Développer avec CSharp\Solutions Visual Studio\7-Pendu\Pendu\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+\\serveur\commun\Clément\Exercices\8-Développer avec CSharp\Solutions Visual Studio\7-Pendu\Pendu\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+\\serveur\commun\Clément\Exercices\8-Développer avec CSharp\Solutions Visual Studio\7-Pendu\Pendu\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\afpa\Documents\Semaine 5\Exercice C#\Pendu\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\afpa\Documents\Semaine 5\Exercice C#\Pendu\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\afpa\Documents\Semaine 5\Exercice C#\Pendu\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\afpa\Documents\Semaine 5\Exercice C#\Pendu\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\afpa\Documents\Semaine 5\Exercice C#\Pendu\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\afpa\Documents\Semaine 5\Exercice C#\Pendu\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache

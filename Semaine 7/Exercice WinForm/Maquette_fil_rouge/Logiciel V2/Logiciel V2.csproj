@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3824F7E2-9D35-4CBD-A7AC-A2AB0A13B87E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Logiciel_V2</RootNamespace>
+    <AssemblyName>Logiciel V2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajouterclient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouterclient.Designer.cs">
+      <DependentUpon>Ajouterclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAclient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAclient.Designer.cs">
+      <DependentUpon>CAclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafournisseur.Designer.cs">
+      <DependentUpon>Cafournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogue.Designer.cs">
+      <DependentUpon>Catalogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAtotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAtotal.Designer.cs">
+      <DependentUpon>CAtotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consulterclient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulterclient.Designer.cs">
+      <DependentUpon>Consulterclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logiciel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logiciel.Designer.cs">
+      <DependentUpon>Logiciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modifierclient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifierclient.Designer.cs">
+      <DependentUpon>Modifierclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produitcommandes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produitcommandes.Designer.cs">
+      <DependentUpon>Produitcommandes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ajouterclient.resx">
+      <DependentUpon>Ajouterclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAclient.resx">
+      <DependentUpon>CAclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafournisseur.resx">
+      <DependentUpon>Cafournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogue.resx">
+      <DependentUpon>Catalogue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAtotal.resx">
+      <DependentUpon>CAtotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulterclient.resx">
+      <DependentUpon>Consulterclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logiciel.resx">
+      <DependentUpon>Logiciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifierclient.resx">
+      <DependentUpon>Modifierclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produitcommandes.resx">
+      <DependentUpon>Produitcommandes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

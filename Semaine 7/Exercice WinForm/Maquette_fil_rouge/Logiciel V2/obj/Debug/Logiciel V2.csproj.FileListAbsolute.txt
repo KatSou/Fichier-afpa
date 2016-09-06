@@ -1,0 +1,14 @@
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\bin\Debug\Logiciel V2.exe.config
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\bin\Debug\Logiciel V2.exe
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\bin\Debug\Logiciel V2.pdb
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Ajouterclient.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Logiciel.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Properties.Resources.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.csproj.GenerateResource.Cache
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.exe
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.pdb
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Modifierclient.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Consulterclient.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.CAclient.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Cafournisseur.resources

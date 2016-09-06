@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="2415c201-4b44-4136-b25b-ae2efb1d5235" name="Activity1" linkedPackageId="cc232120-3517-4474-8f8b-f6d0df447f04" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="799dfb40-5371-4015-a78b-fc70532f2ac5" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="2ccd7a51-930e-463c-9f3a-e0fe0c0993dd" />
+        <nodes>
+          <initialNode Id="8d928bb5-5106-40f2-ba41-16afe77f16d0" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e0b750db-d4d4-4618-84c5-a9f80350c7c9" />
+            <flowNodeTargets>
+              <controlFlow Id="3d954efe-4f40-4ec4-b067-4a00550a3276" isLeaf="false">
+                <opaqueActionMoniker Id="d8a0196e-d4bf-4033-97ab-08378fb5403b" LastKnownName="Identification" />
+                <elementDefinition Id="6df2a6dd-dddb-453f-94b5-2f5fc2413c0b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="d8a0196e-d4bf-4033-97ab-08378fb5403b" name="Identification" isLeaf="false">
+            <elementDefinition Id="5a8d4108-5a9a-4c61-9ba2-d45657cadf7a" />
+            <flowNodeTargets>
+              <controlFlow Id="a3c74417-8cf9-4a06-b755-366c5dcc12c5" isLeaf="false">
+                <decisionNodeMoniker Id="3a7a3df1-c509-4139-9bfb-b2268563541b" LastKnownName="Decision1" />
+                <elementDefinition Id="76e36541-e71b-41a7-9609-491347bfa9f9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="61179ab0-c3a4-470c-9841-d9d680485c7a" name="Enregistrement des emprunts" isLeaf="false">
+            <elementDefinition Id="d6a03205-b896-442b-9ce2-606652a9e643" />
+            <flowNodeTargets>
+              <controlFlow Id="faf21405-3aab-439a-a80c-e38a2f543dec" isLeaf="false">
+                <opaqueActionMoniker Id="d9fe7227-97a0-472a-8694-6f86ee342d55" LastKnownName="Gestion du client" />
+                <elementDefinition Id="06df2a4b-83db-4fa3-9ef3-b256da3c9408" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="3a7a3df1-c509-4139-9bfb-b2268563541b" name="Decision1" isLeaf="false">
+            <elementDefinition Id="b1d7c71c-a51f-4fe6-bbd3-04579000c295" />
+            <flowNodeTargets>
+              <controlFlow Id="038b7ba0-348f-4459-a50e-e3c3e36f1ed4" guard="OK" isLeaf="false">
+                <opaqueActionMoniker Id="61179ab0-c3a4-470c-9841-d9d680485c7a" LastKnownName="Enregistrement des emprunts" />
+                <elementDefinition Id="78b9b586-5aa7-4e94-ae0d-e4979e5c5afa" />
+              </controlFlow>
+              <controlFlow Id="bb85185a-e1b1-4e2c-8e67-79249ce038fe" guard="Non validé" name="Non validé" isLeaf="false">
+                <opaqueActionMoniker Id="d8a0196e-d4bf-4033-97ab-08378fb5403b" LastKnownName="Identification" />
+                <description>non validé</description>
+                <elementDefinition Id="21893351-d4a0-4e32-a6f4-217103ce3ebd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="d9fe7227-97a0-472a-8694-6f86ee342d55" name="Gestion du client" isLeaf="false">
+            <elementDefinition Id="c6cd90cf-b5c2-4a90-9150-771dd3e338e9" />
+            <flowNodeTargets>
+              <controlFlow Id="31b7eb79-e474-499e-94f0-0f384c0be58d" isLeaf="false">
+                <opaqueActionMoniker Id="a060051e-cd6d-4715-a371-aae06dedd93c" LastKnownName="Modification" />
+                <elementDefinition Id="831c2fda-5efd-4146-b84f-989c0fa5d2bf" />
+              </controlFlow>
+              <controlFlow Id="0bcdf185-7be6-470a-8b7f-943e7d3d6f39" isLeaf="false">
+                <opaqueActionMoniker Id="3d024901-2cd8-45ca-9f9b-98a251566424" LastKnownName="Impression" />
+                <elementDefinition Id="fab600d9-d0c2-4b6f-aa35-2479757201ba" />
+              </controlFlow>
+              <controlFlow Id="4d5c2ded-aaaf-4231-9cac-5f9d79cff91b" isLeaf="false">
+                <opaqueActionMoniker Id="60f4cc43-6ab3-40c3-9ef8-e2dfd6ad31ae" LastKnownName="Ajout d'un nouveau client" />
+                <elementDefinition Id="665249cc-aada-446b-8197-39e36a422b6f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="60f4cc43-6ab3-40c3-9ef8-e2dfd6ad31ae" name="Ajout d'un nouveau client" isLeaf="false">
+            <elementDefinition Id="d0fab670-1fcb-4a9a-956f-f30c720588c2" />
+            <flowNodeTargets>
+              <controlFlow Id="6f649ae0-cd01-4062-8753-b712d4ffdcb1" isLeaf="false">
+                <joinNodeMoniker Id="ab7f62b8-fc67-4aeb-974f-914009d8680d" LastKnownName="Join1" />
+                <elementDefinition Id="9ceed677-b07c-4b7c-a513-b04e9aaf2e9f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a060051e-cd6d-4715-a371-aae06dedd93c" name="Modification" isLeaf="false">
+            <elementDefinition Id="f238fca7-28d3-444c-929a-a5a5b2bc3b7e" />
+            <flowNodeTargets>
+              <controlFlow Id="c3fac486-ba7b-4320-88ce-128d82a5d242" isLeaf="false">
+                <joinNodeMoniker Id="ab7f62b8-fc67-4aeb-974f-914009d8680d" LastKnownName="Join1" />
+                <elementDefinition Id="cc4996d6-bded-431a-a1ce-68859ad88ad2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3d024901-2cd8-45ca-9f9b-98a251566424" name="Impression" isLeaf="false">
+            <elementDefinition Id="57d5fa12-85f8-4e22-8565-7ecafd871a41" />
+            <flowNodeTargets>
+              <controlFlow Id="0a28e5bd-78bf-4132-aba0-a7eb80ba9502" isLeaf="false">
+                <opaqueActionMoniker Id="a5cbf6c2-b0cd-4545-bcd4-0fe38b7b7ed9" LastKnownName="Selection du document" />
+                <elementDefinition Id="044bb89e-153d-4b52-b121-8c47a34ded2e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="ab7f62b8-fc67-4aeb-974f-914009d8680d" name="Join1" isLeaf="false">
+            <elementDefinition Id="f2ec43e4-f945-404c-9231-ccdc6155b86e" />
+            <flowNodeTargets>
+              <controlFlow Id="c623896c-11a8-457e-a735-84a88ca95d35" isLeaf="false">
+                <opaqueActionMoniker Id="fd4a9508-9299-49fb-8413-eb880e89bfac" LastKnownName="Validation" />
+                <elementDefinition Id="10d3e5f5-0ec6-45b5-87e0-18cd9258c53f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="fd4a9508-9299-49fb-8413-eb880e89bfac" name="Validation" isLeaf="false">
+            <elementDefinition Id="be63dbf5-d7da-4478-af6a-4601929daecd" />
+            <flowNodeTargets>
+              <controlFlow Id="7d1610ed-a944-478b-8d84-870c82f554ef" isLeaf="false">
+                <opaqueActionMoniker Id="a5cbf6c2-b0cd-4545-bcd4-0fe38b7b7ed9" LastKnownName="Selection du document" />
+                <elementDefinition Id="c552500b-47ed-4387-9aef-947f0041b06b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="a60e289d-f73d-4306-bed0-5640bf1e951b" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="78e9aa2f-e41b-41e3-96ff-581eb05714fe" />
+          </activityFinalNode>
+          <opaqueAction Id="a5cbf6c2-b0cd-4545-bcd4-0fe38b7b7ed9" name="Selection du document" isLeaf="false">
+            <elementDefinition Id="1d258c08-6bac-4424-83dd-4ed6d13aa5a7" />
+            <flowNodeTargets>
+              <controlFlow Id="f839ff63-da92-4a08-9652-908f435db0aa" isLeaf="false">
+                <opaqueActionMoniker Id="66a78268-4e9d-4681-8541-8993b1d91ed3" LastKnownName="creation fiche d'emprunt" />
+                <elementDefinition Id="e37293e3-4c2e-4865-a25b-272b6083041e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="66a78268-4e9d-4681-8541-8993b1d91ed3" name="creation fiche d'emprunt" isLeaf="false">
+            <elementDefinition Id="fa4ed43b-ae01-40d0-889d-65db41abed3a" />
+            <flowNodeTargets>
+              <controlFlow Id="03baf773-a60c-4dee-857d-e2a03d745189" isLeaf="false">
+                <opaqueActionMoniker Id="d1dd8e3a-d1e0-4420-b198-a77c58b4084b" LastKnownName="Validation de l'emprunt" />
+                <elementDefinition Id="0993a035-c316-42b1-91d3-77db0457625f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d1dd8e3a-d1e0-4420-b198-a77c58b4084b" name="Validation de l'emprunt" isLeaf="false">
+            <elementDefinition Id="e33573e1-a4d9-4401-9b56-1821f2efe893" />
+            <flowNodeTargets>
+              <controlFlow Id="b0a8412f-75b5-49c7-aecf-1732b5737891" isLeaf="false">
+                <activityFinalNodeMoniker Id="a60e289d-f73d-4306-bed0-5640bf1e951b" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="8fbd2648-6012-4163-bfbc-3d9f13fff893" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="cc232120-3517-4474-8f8b-f6d0df447f04" name="Cas médiatheque">
+    <elementDefinition Id="c1d29b9a-9321-41e1-97df-a08b3ca12033" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0ce6e076-9c29-47f9-8e11-99484ff227df">
+        <profileInstance Id="1113662a-55d9-4a41-a4d1-878b56e81c28" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f70d324a-1003-4aae-91ff-a26e1b10b2bd">
+        <profileInstance Id="a12577ef-6150-4d18-941d-9965bc7d4a80" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

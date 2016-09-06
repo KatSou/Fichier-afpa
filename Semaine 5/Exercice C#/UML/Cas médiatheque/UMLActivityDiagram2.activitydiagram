@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="63dcdfd0-9d35-4984-b7d0-726c43fa4f8f" name="Activity2" linkedPackageId="dea5870c-62ff-489e-8371-06fe3c5d42a2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c65bc329-9422-4b94-ae99-55f4539d1b12">
+      <profileInstance Id="fdfde154-9a51-483b-8a16-90903cb0de6f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="62523d3b-3f57-471e-99df-67a337829d61">
+      <profileInstance Id="18eb4572-2dc6-4c38-8e72-be76f4e29fc8" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="a1ea7227-fdd5-43eb-bb65-11e8dbd9d293" name="Activity2" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="f26c757f-dcd8-4280-bac9-9a96d73ba3d8" />
+        <nodes>
+          <initialNode Id="c1e08d2a-152c-44af-8b34-d005bf2ce4f3" name="Initial1" isLeaf="false">
+            <elementDefinition Id="c8a4af20-4349-44c5-a432-392bb1462c40" />
+            <flowNodeTargets>
+              <controlFlow Id="0c20a27d-e5c0-4ab4-9962-c2434962ee66" isLeaf="false">
+                <opaqueActionMoniker Id="220e3884-ade5-4f84-a850-9be9a3a28abe" LastKnownName="Achat d'un document" />
+                <elementDefinition Id="3c1b8251-850d-4fb0-8a6d-7dee89bbf647" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="d298c0bf-02df-4279-a3d6-9622c11c400e" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="47773874-d8f2-4169-8599-fbae4a400a98" />
+          </activityFinalNode>
+          <opaqueAction Id="220e3884-ade5-4f84-a850-9be9a3a28abe" name="Achat d'un document" isLeaf="false">
+            <elementDefinition Id="9950e847-fe8c-4d4d-ae2b-5226219edfed" />
+            <flowNodeTargets>
+              <controlFlow Id="1534b2a5-1f4b-4589-b74a-033050b4d17b" isLeaf="false">
+                <opaqueActionMoniker Id="1bccc88d-d844-483b-bf6d-2aaa69a54f95" LastKnownName="Ajout du document dans la BBD" />
+                <elementDefinition Id="67ff6641-894e-4d7c-b2e8-7374a05a6129" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b4c2eb2a-65de-4801-a790-d8ca43e8699e" name="Utilisation du document" isLeaf="false">
+            <elementDefinition Id="905b85e1-3fa6-42b8-b686-f3d9a1d48a31" />
+            <flowNodeTargets>
+              <controlFlow Id="1a2e6f79-ea7b-469f-8e74-fa1193ba384c" isLeaf="false">
+                <joinNodeMoniker Id="4473894a-9325-4486-9a32-c2016f7c009d" LastKnownName="Join1" />
+                <elementDefinition Id="91a4e01c-14ce-4711-b2c1-554294e758ac" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4365f230-cee0-446f-9c19-a048fdbeac8b" name="Stockage du document" isLeaf="false">
+            <elementDefinition Id="d0555f30-4f5a-43f8-b58c-b1dca80ca95f" />
+            <flowNodeTargets>
+              <controlFlow Id="3e0ba28e-8589-4bcb-8fd3-90cdf3c979e9" isLeaf="false">
+                <opaqueActionMoniker Id="b4c2eb2a-65de-4801-a790-d8ca43e8699e" LastKnownName="Utilisation du document" />
+                <elementDefinition Id="737a89a6-2782-41d4-ae8e-4ba7218c246c" />
+              </controlFlow>
+              <controlFlow Id="cd0c57d4-602b-4931-bb58-13bd99a15a09" isLeaf="false">
+                <joinNodeMoniker Id="4473894a-9325-4486-9a32-c2016f7c009d" LastKnownName="Join1" />
+                <elementDefinition Id="ff707c8a-aaa9-48b9-a0a8-6a06cd7de2a3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1bccc88d-d844-483b-bf6d-2aaa69a54f95" name="Ajout du document dans la BBD" isLeaf="false">
+            <elementDefinition Id="01492af4-1762-4b29-a95d-254a71695807" />
+            <flowNodeTargets>
+              <controlFlow Id="88a35160-2992-4b8d-bf26-e1c028d6c8ed" isLeaf="false">
+                <opaqueActionMoniker Id="4365f230-cee0-446f-9c19-a048fdbeac8b" LastKnownName="Stockage du document" />
+                <elementDefinition Id="d348b81f-3f33-4795-9b97-3b8b4ccda485" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="88c18f53-7908-45a6-9152-dfbe4070a51a" name="Vérification du document" isLeaf="false">
+            <elementDefinition Id="1986c04f-a232-40d5-a2a7-bb6e673adbcb" />
+            <flowNodeTargets>
+              <controlFlow Id="eb41a620-8a33-4c04-8f79-eb010176e225" isLeaf="false">
+                <opaqueActionMoniker Id="1391c98c-4175-4867-904b-48f2df2cf44e" LastKnownName="Document OK" />
+                <elementDefinition Id="04fd7bad-c1d3-4cc2-b858-c41ffb237696" />
+              </controlFlow>
+              <controlFlow Id="a748c6f4-34eb-4692-a806-cbe8f9d0bc62" guard="volés ou perdus" isLeaf="false">
+                <opaqueActionMoniker Id="ce1cf00f-eff9-4f64-8e10-824c9afb9e5b" LastKnownName="Mise hors service du document" />
+                <elementDefinition Id="826cfb1a-601e-4549-aba1-870e24cba98f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1391c98c-4175-4867-904b-48f2df2cf44e" name="Document OK" isLeaf="false">
+            <elementDefinition Id="840399e6-620a-456c-b7ae-92058af812fc" />
+            <flowNodeTargets>
+              <controlFlow Id="3de9c990-ad24-404b-bf8d-a15aa10351ea" isLeaf="false">
+                <opaqueActionMoniker Id="4365f230-cee0-446f-9c19-a048fdbeac8b" LastKnownName="Stockage du document" />
+                <elementDefinition Id="0be6a0df-ec46-4e71-9ff3-b5bcadf69001" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ce1cf00f-eff9-4f64-8e10-824c9afb9e5b" name="Mise hors service du document" isLeaf="false">
+            <elementDefinition Id="e221e9ca-4531-4309-b949-209c40f476d0" />
+            <flowNodeTargets>
+              <controlFlow Id="812309cf-5a18-4c1b-97bb-6efd9bb89ae9" isLeaf="false">
+                <activityFinalNodeMoniker Id="d298c0bf-02df-4279-a3d6-9622c11c400e" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="6fa2d70e-50c8-4332-8d28-e54bc311fd5e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="4473894a-9325-4486-9a32-c2016f7c009d" name="Join1" isLeaf="false">
+            <elementDefinition Id="36a4e1bd-4bd3-4f8c-9274-f98fd3fbb05b" />
+            <flowNodeTargets>
+              <controlFlow Id="9a95d727-e8c7-4936-bcb0-c8c2696ca7cd" isLeaf="false">
+                <opaqueActionMoniker Id="88c18f53-7908-45a6-9152-dfbe4070a51a" LastKnownName="Vérification du document" />
+                <elementDefinition Id="676d43de-da4a-424f-8b03-3438509f007b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="dea5870c-62ff-489e-8371-06fe3c5d42a2" name="Cas médiatheque">
+    <elementDefinition Id="c1d29b9a-9321-41e1-97df-a08b3ca12033" />
+  </package>
+</activityRootModel>

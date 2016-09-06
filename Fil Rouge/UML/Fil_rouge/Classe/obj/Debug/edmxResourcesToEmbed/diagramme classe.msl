@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Fil_rougeModelStoreContainer" CdmEntityContainer="Fil_rougeEntities">
+    <EntitySetMapping Name="Adresse">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Adresse">
+        <MappingFragment StoreEntitySet="Adresse">
+          <ScalarProperty Name="adresse_reference" ColumnName="adresse_reference" />
+          <ScalarProperty Name="client_adresse" ColumnName="client_adresse" />
+          <ScalarProperty Name="client_code_postal" ColumnName="client_code_postal" />
+          <ScalarProperty Name="clien_ville" ColumnName="clien_ville" />
+          <ScalarProperty Name="client_facturation_adresse" ColumnName="client_facturation_adresse" />
+          <ScalarProperty Name="client_facturation_code_postal" ColumnName="client_facturation_code_postal" />
+          <ScalarProperty Name="client_facturation_ville" ColumnName="client_facturation_ville" />
+          <ScalarProperty Name="client_livraison_adresse" ColumnName="client_livraison_adresse" />
+          <ScalarProperty Name="client_livraison_code_postal" ColumnName="client_livraison_code_postal" />
+          <ScalarProperty Name="client_livraison_ville" ColumnName="client_livraison_ville" />
+          <ScalarProperty Name="client_reference" ColumnName="client_reference" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="client_reference" ColumnName="client_reference" />
+          <ScalarProperty Name="client_categorie" ColumnName="client_categorie" />
+          <ScalarProperty Name="client_nom" ColumnName="client_nom" />
+          <ScalarProperty Name="client_prenom" ColumnName="client_prenom" />
+          <ScalarProperty Name="client_telephone" ColumnName="client_telephone" />
+          <ScalarProperty Name="client_mail" ColumnName="client_mail" />
+          <ScalarProperty Name="type_reglement" ColumnName="type_reglement" />
+          <ScalarProperty Name="prix_coef" ColumnName="prix_coef" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Commande">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Commande">
+        <MappingFragment StoreEntitySet="Commande">
+          <ScalarProperty Name="commande_numero" ColumnName="commande_numero" />
+          <ScalarProperty Name="commande_etat" ColumnName="commande_etat" />
+          <ScalarProperty Name="facture" ColumnName="facture" />
+          <ScalarProperty Name="date_facturation" ColumnName="date_facturation" />
+          <ScalarProperty Name="commande_date" ColumnName="commande_date" />
+          <ScalarProperty Name="client_reference" ColumnName="client_reference" />
+          <ScalarProperty Name="code_reduction" ColumnName="code_reduction" />
+          <ScalarProperty Name="commercial_matricule" ColumnName="commercial_matricule" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Commercial">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Commercial">
+        <MappingFragment StoreEntitySet="Commercial">
+          <ScalarProperty Name="commercial_matricule" ColumnName="commercial_matricule" />
+          <ScalarProperty Name="commercial_nom" ColumnName="commercial_nom" />
+          <ScalarProperty Name="commercial_prenom" ColumnName="commercial_prenom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fournisseur">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Fournisseur">
+        <MappingFragment StoreEntitySet="Fournisseur">
+          <ScalarProperty Name="fournisseur_reference" ColumnName="fournisseur_reference" />
+          <ScalarProperty Name="fournisseur_nom" ColumnName="fournisseur_nom" />
+          <ScalarProperty Name="fournisseur_adresse" ColumnName="fournisseur_adresse" />
+          <ScalarProperty Name="fournisseur_cp" ColumnName="fournisseur_cp" />
+          <ScalarProperty Name="fournisseur_ville" ColumnName="fournisseur_ville" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fournit">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Fournit">
+        <MappingFragment StoreEntitySet="Fournit">
+          <ScalarProperty Name="quantite_produit_fournit" ColumnName="quantite_produit_fournit" />
+          <ScalarProperty Name="produit_reference" ColumnName="produit_reference" />
+          <ScalarProperty Name="fournisseur_reference" ColumnName="fournisseur_reference" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Livrer">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Livrer">
+        <MappingFragment StoreEntitySet="Livrer">
+          <ScalarProperty Name="bon_livraison_numero" ColumnName="bon_livraison_numero" />
+          <ScalarProperty Name="bon_livraison_nom" ColumnName="bon_livraison_nom" />
+          <ScalarProperty Name="quantite_livrer" ColumnName="quantite_livrer" />
+          <ScalarProperty Name="adresse_reference" ColumnName="adresse_reference" />
+          <ScalarProperty Name="commande_numero" ColumnName="commande_numero" />
+          <ScalarProperty Name="produit_reference" ColumnName="produit_reference" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Produits">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Produits">
+        <MappingFragment StoreEntitySet="Produits">
+          <ScalarProperty Name="produit_reference" ColumnName="produit_reference" />
+          <ScalarProperty Name="produit_nom" ColumnName="produit_nom" />
+          <ScalarProperty Name="produit_libelle_court" ColumnName="produit_libelle_court" />
+          <ScalarProperty Name="produit_libelle_long" ColumnName="produit_libelle_long" />
+          <ScalarProperty Name="produit_rubrique" ColumnName="produit_rubrique" />
+          <ScalarProperty Name="produit_stock" ColumnName="produit_stock" />
+          <ScalarProperty Name="produit_photo" ColumnName="produit_photo" />
+          <ScalarProperty Name="prix_achat_initial" ColumnName="prix_achat_initial" />
+          <ScalarProperty Name="prix_vente_ht" ColumnName="prix_vente_ht" />
+          <ScalarProperty Name="taux_tva" ColumnName="taux_tva" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rubrique">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Rubrique">
+        <MappingFragment StoreEntitySet="Rubrique">
+          <ScalarProperty Name="rubrique_reference" ColumnName="rubrique_reference" />
+          <ScalarProperty Name="sous_rubrique_nom" ColumnName="sous_rubrique_nom" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sont_present">
+      <EntityTypeMapping TypeName="Fil_rougeModel.Sont_present">
+        <MappingFragment StoreEntitySet="Sont_present">
+          <ScalarProperty Name="quantite_acheter" ColumnName="quantite_acheter" />
+          <ScalarProperty Name="produit_reference" ColumnName="produit_reference" />
+          <ScalarProperty Name="commande_numero" ColumnName="commande_numero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Contient" TypeName="Fil_rougeModel.Contient" StoreEntitySet="Contient">
+      <EndProperty Name="Rubrique">
+        <ScalarProperty Name="rubrique_reference" ColumnName="rubrique_reference" />
+      </EndProperty>
+      <EndProperty Name="Rubrique1">
+        <ScalarProperty Name="rubrique_reference" ColumnName="rubrique_reference_Rubrique" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Reference" TypeName="Fil_rougeModel.Reference" StoreEntitySet="Reference">
+      <EndProperty Name="Produits">
+        <ScalarProperty Name="produit_reference" ColumnName="produit_reference" />
+      </EndProperty>
+      <EndProperty Name="Rubrique">
+        <ScalarProperty Name="rubrique_reference" ColumnName="rubrique_reference" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="S_occupe" TypeName="Fil_rougeModel.S_occupe" StoreEntitySet="S_occupe">
+      <EndProperty Name="Client">
+        <ScalarProperty Name="client_reference" ColumnName="client_reference" />
+      </EndProperty>
+      <EndProperty Name="Commercial">
+        <ScalarProperty Name="commercial_matricule" ColumnName="commercial_matricule" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

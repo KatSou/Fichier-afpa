@@ -1,0 +1,3 @@
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 1\bin\Debug\Exercice 1.exe.config
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 1\obj\Debug\Exercice 1.exe
+C:\Users\afpa\Documents\ADO.NET\Exercice 1\Exercice 1\obj\Debug\Exercice 1.pdb

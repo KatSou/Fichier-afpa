@@ -1,0 +1,22 @@
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\bin\Debug\Maquette 2.exe.config
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.créerficheclient.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette_2.Form1.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette_2.Properties.Resources.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.saisiecodeclient.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette 2.csproj.GenerateResource.Cache
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette 2.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\bin\Debug\Maquette 2.exe
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\bin\Debug\Maquette 2.pdb
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette 2.exe
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette 2.pdb
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.CAclient.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.CAfournisseur.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.Catalogue.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.consultationcommande.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.ficheclient.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.Fichecommande.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.Fournisseur.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.listedesporduitscommandés.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.validationetreglementparticulier.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.validationetreglementprofessionel.resources
+C:\Users\afpa\Documents\Fil Rouge\UML\Fil_rouge\Maquette 2\obj\Debug\Maquette.étatdescommandes.resources
