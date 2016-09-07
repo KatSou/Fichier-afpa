@@ -68,6 +68,8 @@ document.getElementById("email").addEventListener("blur",regex);
 
 
 function affiche()
+
+
 {
 	var elt = document.getElementById("language").value;
 	document.getElementById("ETP").value += elt + "\n";
