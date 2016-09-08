@@ -194,35 +194,35 @@ Insert into fournit
 -- sont_present
 
 Insert into sont_present
-	Values (2,2,1)
+	Values (2,2,1,'')
 Insert into sont_present
-	Values (5,1,2)
+	Values (5,1,2,'')
 Insert into sont_present
-	Values (3,2,3)
+	Values (3,2,3,'')
 Insert into sont_present
-	Values (5,4,4)
+	Values (5,4,4,'')
 Insert into sont_present
-	Values (4,5,5)
+	Values (4,5,5,'')
 Insert into sont_present
-	Values (10,4,6)
+	Values (10,4,6,'')
 Insert into sont_present
-	Values (8,2,7)
+	Values (8,2,7,'')
 Insert into sont_present
-	Values (7,9,8)
+	Values (7,9,8,'')
 Insert into sont_present
-	Values (6,6,9)
+	Values (6,6,9,'')
 Insert into sont_present
-	Values (3,4,10)
+	Values (3,4,10,'')
 Insert into sont_present
-	Values (7,7,11)
+	Values (7,7,11,'')
 Insert into sont_present
-	Values (12,8,12)
+	Values (12,8,12,'')
 Insert into sont_present
-	Values (11,2,13)
+	Values (11,2,13,'')
 Insert into sont_present
-	Values (5,1,14)
+	Values (5,1,14,'')
 Insert into sont_present
-	Values (7,3,15)
+	Values (7,3,15,'')
 
 
 

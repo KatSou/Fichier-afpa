@@ -51,7 +51,7 @@ CREATE TABLE Produits(
 	produit_stock        INT   ,
 	produit_photo        VARCHAR (25)  ,
 	prix_achat_initial   MONEY  NOT NULL ,
-	prix_vente_ht        MONEY   ,
+	prix_vente        MONEY   ,
 	taux_tva             FLOAT   ,
 	CONSTRAINT prk_constraint_Produits PRIMARY KEY NONCLUSTERED (produit_reference)
 );
@@ -133,6 +133,7 @@ CREATE TABLE Sont_present(
 	quantite_acheter        INT   ,
 	produit_reference       INT REFERENCES Produits(produit_reference) NOT NULL ,
 	commande_numero         INT REFERENCES Commande(commande_numero) NOT NULL ,
+	prix_total              INT NOT NULL,
 	CONSTRAINT prk_constraint_Sont_present PRIMARY KEY NONCLUSTERED (produit_reference,commande_numero)
 );
 
