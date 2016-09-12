@@ -1,0 +1,38 @@
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\bin\Debug\Logiciel V2.exe.config
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\bin\Debug\Logiciel V2.exe
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\bin\Debug\Logiciel V2.pdb
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Ajouterclient.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Logiciel.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Properties.Resources.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.csproj.GenerateResource.Cache
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.exe
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.pdb
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Modifierclient.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Consulterclient.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.CAclient.resources
+C:\Users\afpa\Documents\Semaine 7\Exercice WinForm\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Cafournisseur.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\bin\Debug\Logiciel V2.exe.config
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.exe
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.pdb
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\bin\Debug\Logiciel V2.exe
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\bin\Debug\Logiciel V2.pdb
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Ajouterclient.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.CAclient.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Cafournisseur.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Catalogue.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.CAtotal.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Consulterclient.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Logiciel.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Modifierclient.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Produitcommandes.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.Properties.Resources.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel V2.csproj.GenerateResource.Cache
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\bin\Debug\BDD.dll
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\bin\Debug\EntityFramework.dll
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\bin\Debug\BDD.pdb
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\bin\Debug\EntityFramework.xml
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.creercommande.resources
+C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\Logiciel V2\obj\Debug\Logiciel_V2.ajouterproduit.resources

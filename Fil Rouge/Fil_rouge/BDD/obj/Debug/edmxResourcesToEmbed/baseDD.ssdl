@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Fil_rougeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adresse">
+    <Key>
+      <PropertyRef Name="adresse_reference" />
+    </Key>
+    <Property Name="adresse_reference" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="client_adresse" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="client_code_postal" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="client_ville" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="client_facturation_adresse" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="client_facturation_code_postal" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="client_facturation_ville" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="client_livraison_adresse" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="client_livraison_code_postal" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="client_livraison_ville" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="client_reference" Type="int" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="client_reference" />
+    </Key>
+    <Property Name="client_reference" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="client_categorie" Type="varchar" MaxLength="1" />
+    <Property Name="client_nom" Type="varchar" MaxLength="30" />
+    <Property Name="client_prenom" Type="varchar" MaxLength="30" />
+    <Property Name="client_telephone" Type="varchar" MaxLength="10" />
+    <Property Name="client_mail" Type="varchar" MaxLength="30" />
+    <Property Name="type_reglement" Type="varchar" MaxLength="30" />
+    <Property Name="prix_coef" Type="float" Nullable="false" />
+    <Property Name="pro_siret" Type="varchar" MaxLength="50" />
+    <Property Name="pro_raison" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Commande">
+    <Key>
+      <PropertyRef Name="commande_numero" />
+    </Key>
+    <Property Name="commande_numero" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="commande_etat" Type="varchar" MaxLength="25" />
+    <Property Name="facture" Type="varchar" MaxLength="30" />
+    <Property Name="date_facturation" Type="date" />
+    <Property Name="commande_date" Type="datetime" />
+    <Property Name="client_reference" Type="int" />
+    <Property Name="code_reduction" Type="int" />
+    <Property Name="commercial_matricule" Type="int" />
+  </EntityType>
+  <EntityType Name="Commercial">
+    <Key>
+      <PropertyRef Name="commercial_matricule" />
+    </Key>
+    <Property Name="commercial_matricule" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="commercial_nom" Type="varchar" MaxLength="25" />
+    <Property Name="commercial_prenom" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="Contient">
+    <Key>
+      <PropertyRef Name="rubrique_reference" />
+      <PropertyRef Name="rubrique_reference_Rubrique" />
+    </Key>
+    <Property Name="rubrique_reference" Type="int" Nullable="false" />
+    <Property Name="rubrique_reference_Rubrique" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fournisseur">
+    <Key>
+      <PropertyRef Name="fournisseur_reference" />
+    </Key>
+    <Property Name="fournisseur_reference" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fournisseur_nom" Type="varchar" MaxLength="30" />
+    <Property Name="fournisseur_adresse" Type="varchar" MaxLength="100" />
+    <Property Name="fournisseur_cp" Type="varchar" MaxLength="10" />
+    <Property Name="fournisseur_ville" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Fournit">
+    <Key>
+      <PropertyRef Name="produit_reference" />
+      <PropertyRef Name="fournisseur_reference" />
+    </Key>
+    <Property Name="quantite_produit_fournit" Type="int" />
+    <Property Name="produit_reference" Type="int" Nullable="false" />
+    <Property Name="fournisseur_reference" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Livrer">
+    <Key>
+      <PropertyRef Name="adresse_reference" />
+      <PropertyRef Name="commande_numero" />
+      <PropertyRef Name="produit_reference" />
+    </Key>
+    <Property Name="bon_livraison_numero" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="bon_livraison_nom" Type="varchar" MaxLength="30" />
+    <Property Name="quantite_livrer" Type="int" />
+    <Property Name="adresse_reference" Type="int" Nullable="false" />
+    <Property Name="commande_numero" Type="int" Nullable="false" />
+    <Property Name="produit_reference" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Produits">
+    <Key>
+      <PropertyRef Name="produit_reference" />
+    </Key>
+    <Property Name="produit_reference" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="produit_nom" Type="varchar" MaxLength="200" />
+    <Property Name="produit_libelle_court" Type="varchar" MaxLength="50" />
+    <Property Name="produit_libelle_long" Type="varchar" MaxLength="250" />
+    <Property Name="produit_rubrique" Type="varchar" MaxLength="30" />
+    <Property Name="produit_stock" Type="int" />
+    <Property Name="produit_photo" Type="varchar" MaxLength="25" />
+    <Property Name="prix_achat_initial" Type="money" Nullable="false" />
+    <Property Name="prix_vente" Type="money" />
+    <Property Name="taux_tva" Type="float" />
+  </EntityType>
+  <EntityType Name="Reference">
+    <Key>
+      <PropertyRef Name="produit_reference" />
+      <PropertyRef Name="rubrique_reference" />
+    </Key>
+    <Property Name="produit_reference" Type="int" Nullable="false" />
+    <Property Name="rubrique_reference" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rubrique">
+    <Key>
+      <PropertyRef Name="rubrique_reference" />
+    </Key>
+    <Property Name="rubrique_reference" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sous_rubrique_nom" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="S_occupe">
+    <Key>
+      <PropertyRef Name="client_reference" />
+      <PropertyRef Name="commercial_matricule" />
+    </Key>
+    <Property Name="client_reference" Type="int" Nullable="false" />
+    <Property Name="commercial_matricule" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sont_present">
+    <Key>
+      <PropertyRef Name="produit_reference" />
+      <PropertyRef Name="commande_numero" />
+    </Key>
+    <Property Name="quantite_acheter" Type="int" />
+    <Property Name="produit_reference" Type="int" Nullable="false" />
+    <Property Name="commande_numero" Type="int" Nullable="false" />
+    <Property Name="prix_total" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Adresse__client___1BFD2C07">
+    <End Role="Client" Type="Self.Client" Multiplicity="0..1" />
+    <End Role="Adresse" Type="Self.Adresse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="client_reference" />
+      </Principal>
+      <Dependent Role="Adresse">
+        <PropertyRef Name="client_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Commande__client__182C9B23">
+    <End Role="Client" Type="Self.Client" Multiplicity="0..1" />
+    <End Role="Commande" Type="Self.Commande" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="client_reference" />
+      </Principal>
+      <Dependent Role="Commande">
+        <PropertyRef Name="client_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Commande__commer__1920BF5C">
+    <End Role="Commercial" Type="Self.Commercial" Multiplicity="0..1" />
+    <End Role="Commande" Type="Self.Commande" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commercial">
+        <PropertyRef Name="commercial_matricule" />
+      </Principal>
+      <Dependent Role="Commande">
+        <PropertyRef Name="commercial_matricule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Contient__rubriq__34C8D9D1">
+    <End Role="Rubrique" Type="Self.Rubrique" Multiplicity="1" />
+    <End Role="Contient" Type="Self.Contient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubrique">
+        <PropertyRef Name="rubrique_reference" />
+      </Principal>
+      <Dependent Role="Contient">
+        <PropertyRef Name="rubrique_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Contient__rubriq__35BCFE0A">
+    <End Role="Rubrique" Type="Self.Rubrique" Multiplicity="1" />
+    <End Role="Contient" Type="Self.Contient" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubrique">
+        <PropertyRef Name="rubrique_reference" />
+      </Principal>
+      <Dependent Role="Contient">
+        <PropertyRef Name="rubrique_reference_Rubrique" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Fournit__fournis__21B6055D">
+    <End Role="Fournisseur" Type="Self.Fournisseur" Multiplicity="1" />
+    <End Role="Fournit" Type="Self.Fournit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fournisseur">
+        <PropertyRef Name="fournisseur_reference" />
+      </Principal>
+      <Dependent Role="Fournit">
+        <PropertyRef Name="fournisseur_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Fournit__produit__20C1E124">
+    <End Role="Produits" Type="Self.Produits" Multiplicity="1" />
+    <End Role="Fournit" Type="Self.Fournit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produits">
+        <PropertyRef Name="produit_reference" />
+      </Principal>
+      <Dependent Role="Fournit">
+        <PropertyRef Name="produit_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Livrer__adresse___2C3393D0">
+    <End Role="Adresse" Type="Self.Adresse" Multiplicity="1" />
+    <End Role="Livrer" Type="Self.Livrer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adresse">
+        <PropertyRef Name="adresse_reference" />
+      </Principal>
+      <Dependent Role="Livrer">
+        <PropertyRef Name="adresse_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Livrer__commande__2D27B809">
+    <End Role="Commande" Type="Self.Commande" Multiplicity="1" />
+    <End Role="Livrer" Type="Self.Livrer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commande">
+        <PropertyRef Name="commande_numero" />
+      </Principal>
+      <Dependent Role="Livrer">
+        <PropertyRef Name="commande_numero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Livrer__produit___2E1BDC42">
+    <End Role="Produits" Type="Self.Produits" Multiplicity="1" />
+    <End Role="Livrer" Type="Self.Livrer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produits">
+        <PropertyRef Name="produit_reference" />
+      </Principal>
+      <Dependent Role="Livrer">
+        <PropertyRef Name="produit_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reference__produ__30F848ED">
+    <End Role="Produits" Type="Self.Produits" Multiplicity="1" />
+    <End Role="Reference" Type="Self.Reference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produits">
+        <PropertyRef Name="produit_reference" />
+      </Principal>
+      <Dependent Role="Reference">
+        <PropertyRef Name="produit_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reference__rubri__31EC6D26">
+    <End Role="Rubrique" Type="Self.Rubrique" Multiplicity="1" />
+    <End Role="Reference" Type="Self.Reference" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubrique">
+        <PropertyRef Name="rubrique_reference" />
+      </Principal>
+      <Dependent Role="Reference">
+        <PropertyRef Name="rubrique_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_occupe__client__286302EC">
+    <End Role="Client" Type="Self.Client" Multiplicity="1" />
+    <End Role="S_occupe" Type="Self.S_occupe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="client_reference" />
+      </Principal>
+      <Dependent Role="S_occupe">
+        <PropertyRef Name="client_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__S_occupe__commer__29572725">
+    <End Role="Commercial" Type="Self.Commercial" Multiplicity="1" />
+    <End Role="S_occupe" Type="Self.S_occupe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commercial">
+        <PropertyRef Name="commercial_matricule" />
+      </Principal>
+      <Dependent Role="S_occupe">
+        <PropertyRef Name="commercial_matricule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sont_pres__comma__25869641">
+    <End Role="Commande" Type="Self.Commande" Multiplicity="1" />
+    <End Role="Sont_present" Type="Self.Sont_present" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commande">
+        <PropertyRef Name="commande_numero" />
+      </Principal>
+      <Dependent Role="Sont_present">
+        <PropertyRef Name="commande_numero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sont_pres__produ__24927208">
+    <End Role="Produits" Type="Self.Produits" Multiplicity="1" />
+    <End Role="Sont_present" Type="Self.Sont_present" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produits">
+        <PropertyRef Name="produit_reference" />
+      </Principal>
+      <Dependent Role="Sont_present">
+        <PropertyRef Name="produit_reference" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Fil_rougeModelStoreContainer">
+    <EntitySet Name="Adresse" EntityType="Self.Adresse" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Commande" EntityType="Self.Commande" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Commercial" EntityType="Self.Commercial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contient" EntityType="Self.Contient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fournisseur" EntityType="Self.Fournisseur" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fournit" EntityType="Self.Fournit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Livrer" EntityType="Self.Livrer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Produits" EntityType="Self.Produits" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reference" EntityType="Self.Reference" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rubrique" EntityType="Self.Rubrique" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="S_occupe" EntityType="Self.S_occupe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sont_present" EntityType="Self.Sont_present" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Adresse__client___1BFD2C07" Association="Self.FK__Adresse__client___1BFD2C07">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Adresse" EntitySet="Adresse" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Commande__client__182C9B23" Association="Self.FK__Commande__client__182C9B23">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Commande" EntitySet="Commande" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Commande__commer__1920BF5C" Association="Self.FK__Commande__commer__1920BF5C">
+      <End Role="Commercial" EntitySet="Commercial" />
+      <End Role="Commande" EntitySet="Commande" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Contient__rubriq__34C8D9D1" Association="Self.FK__Contient__rubriq__34C8D9D1">
+      <End Role="Rubrique" EntitySet="Rubrique" />
+      <End Role="Contient" EntitySet="Contient" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Contient__rubriq__35BCFE0A" Association="Self.FK__Contient__rubriq__35BCFE0A">
+      <End Role="Rubrique" EntitySet="Rubrique" />
+      <End Role="Contient" EntitySet="Contient" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Fournit__fournis__21B6055D" Association="Self.FK__Fournit__fournis__21B6055D">
+      <End Role="Fournisseur" EntitySet="Fournisseur" />
+      <End Role="Fournit" EntitySet="Fournit" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Fournit__produit__20C1E124" Association="Self.FK__Fournit__produit__20C1E124">
+      <End Role="Produits" EntitySet="Produits" />
+      <End Role="Fournit" EntitySet="Fournit" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Livrer__adresse___2C3393D0" Association="Self.FK__Livrer__adresse___2C3393D0">
+      <End Role="Adresse" EntitySet="Adresse" />
+      <End Role="Livrer" EntitySet="Livrer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Livrer__commande__2D27B809" Association="Self.FK__Livrer__commande__2D27B809">
+      <End Role="Commande" EntitySet="Commande" />
+      <End Role="Livrer" EntitySet="Livrer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Livrer__produit___2E1BDC42" Association="Self.FK__Livrer__produit___2E1BDC42">
+      <End Role="Produits" EntitySet="Produits" />
+      <End Role="Livrer" EntitySet="Livrer" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reference__produ__30F848ED" Association="Self.FK__Reference__produ__30F848ED">
+      <End Role="Produits" EntitySet="Produits" />
+      <End Role="Reference" EntitySet="Reference" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reference__rubri__31EC6D26" Association="Self.FK__Reference__rubri__31EC6D26">
+      <End Role="Rubrique" EntitySet="Rubrique" />
+      <End Role="Reference" EntitySet="Reference" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_occupe__client__286302EC" Association="Self.FK__S_occupe__client__286302EC">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="S_occupe" EntitySet="S_occupe" />
+    </AssociationSet>
+    <AssociationSet Name="FK__S_occupe__commer__29572725" Association="Self.FK__S_occupe__commer__29572725">
+      <End Role="Commercial" EntitySet="Commercial" />
+      <End Role="S_occupe" EntitySet="S_occupe" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sont_pres__comma__25869641" Association="Self.FK__Sont_pres__comma__25869641">
+      <End Role="Commande" EntitySet="Commande" />
+      <End Role="Sont_present" EntitySet="Sont_present" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sont_pres__produ__24927208" Association="Self.FK__Sont_pres__produ__24927208">
+      <End Role="Produits" EntitySet="Produits" />
+      <End Role="Sont_present" EntitySet="Sont_present" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
