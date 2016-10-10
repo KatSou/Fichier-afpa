@@ -136,9 +136,10 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(80, 439);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(27, 13);
+            this.label13.Size = new System.Drawing.Size(24, 13);
             this.label13.TabIndex = 72;
-            this.label13.Text = "CP :";
+            this.label13.Text = "CP:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // textBox12
             // 

@@ -101,5 +101,10 @@ namespace Logiciel_V2
             newproduit.MdiParent = this;
             newproduit.Show();
         }
+
+        private void Logiciel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -6,6 +6,7 @@
 	position: absolute;
 	top:0;
 	left: 0;
+	
 }
 
 #divDeux
@@ -37,6 +38,9 @@
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	border-style: solid;
+	border-color: black;
+	border :-1px;
 }
 
 #rond

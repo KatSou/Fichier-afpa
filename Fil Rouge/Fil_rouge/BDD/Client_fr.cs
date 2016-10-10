@@ -17,7 +17,11 @@ namespace BDD
             _connect = new SqlConnection(chaine);
             
         }
-
+        /// <summary>
+        /// Cette fonction permet d'ajouter un client a la BDD SQL
+        /// </summary>
+        /// <param name="cli"> Ce sont les informations du client</param>
+        /// <param name="add">Ce sont les informations des adreses du client</param>
         public void Ajouterclient (Client cli,Adresse add)
         {
             _connect.Open();
@@ -53,6 +57,11 @@ namespace BDD
             _connect.Close();
 
         }
+        /// <summary>
+        /// Fonction qui sert a rechercher un seul client
+        /// </summary>
+        /// <param name="i">Nom du client</param>
+        /// <returns></returns>
         public List<string> Rechercherclient (string i)
         {
             _connect.Open();
@@ -69,6 +78,11 @@ namespace BDD
             _connect.Close();
             return client;
         }
+        /// <summary>
+        /// Cette fonction permet de rechercher un client en foncion de son ID
+        /// </summary>
+        /// <param name="i">ID du client</param>
+        /// <returns></returns>
         public Client Afficher(string i)
         {
             _connect.Open();
@@ -94,7 +108,11 @@ namespace BDD
             _connect.Close();
             return c;
         }
-
+        /// <summary>
+        /// Cette fonction permet d'afficher les adresses du client
+        /// </summary>
+        /// <param name="i">Id du client</param>
+        /// <returns></returns>
         public Adresse Afficheradd(string i)
         {
             _connect.Open();
@@ -120,6 +138,11 @@ namespace BDD
             _connect.Close();
             return c;
         }
+        /// <summary>
+        /// Cette fonction permet de modifier un client
+        /// </summary>
+        /// <param name="cli">parametre a modifier ex : prenom ou siret ou raison social ...</param>
+        /// <param name="i"></param>
         public void Modifier (Client cli, string i)
         {
             _connect.Open();

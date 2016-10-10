@@ -1,0 +1,13 @@
+Bibliotheque 
+
+
+<pre>
+<?php
+	print_r($_POST);     // Permet d'afficher les valeurs de la variable $_POST
+?>
+</pre>
+
+
+
+
+

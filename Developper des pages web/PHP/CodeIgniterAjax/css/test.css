@@ -1,0 +1,18 @@
+.modal-body{
+	width: auto;
+	height: auto;
+}
+
+#btn-val{
+	float: left;
+}
+
+#btn-ann{
+	float: right;
+}
+#btn-mod1{
+	float: left;
+}
+#btn-supp{
+	float: left;
+}

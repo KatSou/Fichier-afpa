@@ -24,20 +24,8 @@ namespace Logiciel_V2
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-                Regex ex = new Regex(@"[a-zA-Z0-9._-]{2,64}@([a-zA-Z0-9-]{2,252}\.[a-zA-Z.]{2,6})");
-
-                if (ex.IsMatch(textBox7.Text) == true)
-                {
-                    textBox7.BackColor = Color.White;
-                    button1.Visible = true;
-            }
-                else
-                {
-                    textBox7.BackColor = Color.Red;
-                    button1.Visible = false;
-                }                
-            
-        }
+        } 
+        
 
         private void Ajouterclient_Load(object sender, EventArgs e)
         {
@@ -62,46 +50,85 @@ namespace Logiciel_V2
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            Client cli = new Client();            
-            cli.client_nom = textBox1.Text;
-            cli.client_prenom = textBox2.Text;
-            cli.client_telephone = textBox6.Text;
-            cli.client_mail = textBox7.Text;            
-            cli.prix_coef = Double.Parse(textBox9.Text);
-            cli.pro_siret = textBox16.Text;
-            cli.pro_raison = textBox17.Text;
+        {            
+            Regex ex = new Regex(@"^(.+)@(.+)\.(.+)$");
+            Match test = ex.Match(textBox7.Text);
 
-            if (radioButton1.Checked)
+            if (test.Success)
             {
-                cli.client_categorie = "1";
-                cli.pro_siret = "";
-                cli.pro_raison = "";
-                cli.type_reglement = "Particulier";
+                Regex ex1 = new Regex(@"^[a-zA-Z][a-zA-Z0-9_\-\.]{1,50}$");
+                Match test1 = ex1.Match(test.Groups[1].Value);
+                if (test1.Success)
+                {
+                    Regex ex2 = new Regex(@"^[a-zA-Z][a-zA-Z0-9_\-\.]{1,50}$");
+                    Match test2 = ex2.Match(test.Groups[2].Value);
+                    if (test2.Success)
+                    {
+                        Regex ex3 = new Regex(@"^[a-zA-Z.]{2,50}$");
+                        Match test3 = ex3.Match(test.Groups[3].Value);
+
+                        if (test3.Success)
+                        {
+                            Client cli = new Client();
+                            cli.client_nom = textBox1.Text;
+                            cli.client_prenom = textBox2.Text;
+                            cli.client_telephone = textBox6.Text;
+                            cli.client_mail = textBox7.Text;
+                            cli.prix_coef = Double.Parse(textBox9.Text);
+                            cli.pro_siret = textBox16.Text;
+                            cli.pro_raison = textBox17.Text;
+
+                            if (radioButton1.Checked)
+                            {
+                                cli.client_categorie = "1";
+                                cli.pro_siret = "";
+                                cli.pro_raison = "";
+                                cli.type_reglement = "Particulier";
+                            }
+                            if (radioButton2.Checked)
+                            {
+                                cli.client_categorie = "2";
+                                cli.type_reglement = "Professionnel";
+
+                            }
+
+                            Adresse add = new Adresse();
+                            add.client_adresse = textBox13.Text;
+                            add.client_code_postal = textBox12.Text;
+                            add.client_ville = textBox11.Text;
+                            add.client_facturation_adresse = textBox18.Text;
+                            add.client_facturation_code_postal = textBox15.Text;
+                            add.client_facturation_ville = textBox14.Text;
+                            add.client_livraison_adresse = textBox3.Text;
+                            add.client_livraison_code_postal = textBox4.Text;
+                            add.client_livraison_ville = textBox5.Text;
+
+                            repo.Ajouterclient(cli, add);
+                            MessageBox.Show("Client ajouté", "Réussi", MessageBoxButtons.OK);
+
+                            Close();
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("3eme partie mauvaise .: "+ test.Groups[3].ToString());
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("2eme partie mauvaise @: "+ test.Groups[2].ToString());
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Premiere partie mauvaise " + test.Groups[1].ToString()) ;
+                }
+
             }
-            if (radioButton2.Checked)
+            else
             {
-                cli.client_categorie = "2";
-                cli.type_reglement = "Professionnel";
-
-            }
-
-            Adresse add = new Adresse();
-            add.client_adresse = textBox13.Text;
-            add.client_code_postal = textBox12.Text;
-            add.client_ville = textBox11.Text;
-            add.client_facturation_adresse = textBox18.Text;
-            add.client_facturation_code_postal = textBox15.Text;
-            add.client_facturation_ville = textBox14.Text;
-            add.client_livraison_adresse = textBox3.Text;
-            add.client_livraison_code_postal = textBox4.Text;
-            add.client_livraison_ville = textBox5.Text;
-
-            repo.Ajouterclient(cli, add);
-            MessageBox.Show("Client ajouté", "Réussi", MessageBoxButtons.OK);
-
-            Close();
-
+                MessageBox.Show("Ton adresse mail n'est pas valide !");
+            }            
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -116,7 +143,7 @@ namespace Logiciel_V2
 
         private void textBox12_TextChanged(object sender, EventArgs e)
         {
-            Regex ex = new Regex(@"[0-9]{5}");
+            Regex ex = new Regex(@"[0-9]{5,5}");
 
             if (ex.IsMatch(textBox12.Text) == true)
             {
@@ -244,5 +271,17 @@ namespace Logiciel_V2
                 button1.Visible = false;
             }
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+          
+
+        }
     }
+    
 }

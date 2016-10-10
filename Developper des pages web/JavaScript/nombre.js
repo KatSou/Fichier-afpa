@@ -1,23 +1,41 @@
-var aleatoire = Math.floor((Math.random() * 20) + 1);
-console.log(aleatoire);
-saisie =0;
-
-function verif()
+$(document).ready(function()
 {
-	var saisie = document.getElementById("textBox1").value;	
-		
-		if (saisie < aleatoire)
+	$aleatoire = Math.floor((Math.random()*20)+1);
+	console.log($aleatoire);
+	$("#lab1").show();	
+	$('#button1').click(function()
 		{
-			document.getElementById("label1").innerHTML = "Votre nombre est trop petit !! Entrez un nouveau nombre :";
-		}
-		else if (saisie > aleatoire)
-		{
-			document.getElementById("label1").innerHTML = "Votre nombre est trop grand !! Entrez un nouveau nombre :";
-		}
-		else 
-		{
-			document.getElementById("label1").innerHTML = "Vous avez gagner !!";
-		}	
-}	
 
+			$saisie= $("#textBox1").val();
+			$saisie = parseInt($saisie);
 
+			if ($saisie < $aleatoire)
+			{
+				$('#lab2').html('Votre nombre est trop petit !!');
+				$("#textBox1").val("");
+				$("#textBox1").focus();
+			}	
+			else if ($saisie>$aleatoire)
+			{
+				$('#lab2').html('Votre nombre est trop grand !!');
+				$("#textBox1").val("");
+				$("#textBox1").focus();
+			}
+			else 
+			{
+				$('#lab2').html('Vous avez gagner !!');
+			}
+		});
+
+		$('#reset').click(function()
+		{
+			$("#textBox1").val("");
+			$('#lab2').html('');
+			$aleatoire = Math.floor((Math.random()*20)+1);
+			$("#textBox1").focus();
+			console.log($aleatoire);
+		});
+});
+
+	
+	

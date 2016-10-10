@@ -20,45 +20,26 @@ namespace Logiciel_V2
         }
         Client_fr repo = new Client_fr("server=.;database=Fil_rouge;integrated security = true");
         commande_client commande = new commande_client("server=.;database=Fil_rouge;integrated security = true");
-
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
-
         private void button1_Click(object sender, EventArgs e)
-        {
-            
+        {            
             string id = textBox1.Text;
             if (textBox2.Text != "")
-            {
-                
-                listBox1.DataSource = repo.Rechercherclient(textBox2.Text);
-                listBox1.DisplayMember = "client_reference";
-                listBox1.ValueMember = "client_reference";
-
+            {                
+                listBox1.DataSource = repo.Rechercherclient(textBox2.Text);                              
             }  
            if (textBox1.Text != "")
-            {
-                
-                Client cli = repo.Afficher(id);
-               
-                listBox1.Items.Add(cli.client_reference+ " " + cli.client_nom + " " + cli.client_prenom + " " + cli.client_mail);
-                
-                
-
-
-            }
-        
-            
+            {                
+                Client cli = repo.Afficher(id);               
+                listBox1.Items.Add(cli.client_reference+ " " + cli.client_nom + " " + cli.client_prenom + " " + cli.client_mail);                                
+            }      
         }
-
         private void Consulterclient_Load(object sender, EventArgs e)
         {
             // Cette ligne de code charge les données dans la table 'fil_rougeDataSet.Client'.
-            this.clientTableAdapter.Fill(this.fil_rougeDataSet.Client);
-            
-
+            this.clientTableAdapter.Fill(this.fil_rougeDataSet.Client);          
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -69,23 +50,11 @@ namespace Logiciel_V2
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            List<string> commandetotal = new List<string>();
-            Console.WriteLine(listBox1.SelectedValue);
-            commandetotal = commande.recherchecommande((int)listBox1.SelectedValue);
-            
-            int i = 0;
-            while(i < commandetotal.Count)
-            {
-                listBox2.Items.Add(commandetotal[i]);
-                i++;
-            }
-
+        {            
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

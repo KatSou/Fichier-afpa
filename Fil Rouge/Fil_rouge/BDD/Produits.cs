@@ -14,14 +14,14 @@ namespace BDD
     
     public partial class Produits
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Produits()
-        {
-            this.Fournit = new HashSet<Fournit>();
-            this.Livrer = new HashSet<Livrer>();
-            this.Sont_present = new HashSet<Sont_present>();
-            this.Rubrique = new HashSet<Rubrique>();
-        }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        //public Produits()
+        //{
+        //    this.Fournit = new HashSet<Fournit>();
+        //    this.Livrer = new HashSet<Livrer>();
+        //    this.Sont_present = new HashSet<Sont_present>();
+        //    this.Rubrique = new HashSet<Rubrique>();
+        //}
     
         public int produit_reference { get; set; }
         public string produit_nom { get; set; }
@@ -31,16 +31,19 @@ namespace BDD
         public Nullable<int> produit_stock { get; set; }
         public string produit_photo { get; set; }
         public decimal prix_achat_initial { get; set; }
+
+        public int Quantite { get; set; }
+
         public Nullable<double> taux_tva { get; set; }
         public Nullable<decimal> prix_vente { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Fournit> Fournit { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Livrer> Livrer { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Sont_present> Sont_present { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Rubrique> Rubrique { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public virtual ICollection<Fournit> Fournit { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public virtual ICollection<Livrer> Livrer { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public virtual ICollection<Sont_present> Sont_present { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public virtual ICollection<Rubrique> Rubrique { get; set; }
     }
 }

@@ -7,7 +7,8 @@
 <table border>
 <?php
 
-/*$max = 150;
+/* // Nombre impaire
+$max = 150;
  
 echo 'Les chiffres impair compris entre '.$min.' et '.$max.' sont:';
  
@@ -16,10 +17,10 @@ for($i = $min; $i < $max ; $i=$i+2){
 }*/
 
 
-/*for ($i=1; $i < 500; $i++) { 
-
-	echo "Je dois faire mes sauvegardes régulieres de mes fiches".' ';
-	}*/
+/* //Punition
+for ($i=1;$i<=500;$i++) {
+  echo "$i. Je dois faire des sauvegardes régulières...<BR>\n";
+}*/
 
 // 1ère ligne
 echo "<TR><TD></TD>";

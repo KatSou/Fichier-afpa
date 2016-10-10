@@ -5,15 +5,13 @@
 </head>
 <body>
 <?php  
-
-if (file_exists("ListeLiens.txt")) /* Vérification si fichier existant */
  $fp = fopen("ListeLiens.txt","r"); /* Ouverture en lecture seule */
-else {
- echo "Fichier introuvable !";
- exit();
-} 
-
-
+ while (!feof($fp))
+{
+ $enr = fgets ($fp,4096); /* Lecture de la ligne */
+ //echo "$enr<br />";  //lecture du fichier sans liens hypertext
+ echo "<a href='$enr'>$enr</a> <br />";  // Lecture du fichier avec les liens hypertext
+}
 ?>
 </body>
 </html>

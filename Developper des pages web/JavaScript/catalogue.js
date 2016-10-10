@@ -1,0 +1,12 @@
+$(document).ready(function()
+{
+	$("#div2").hide();
+	$("#catalogue").click(function()
+	{
+		$("#div2").show(function(){
+			$("a").click(function(){
+				$("#div2").hide();
+			});
+		});
+	});
+});

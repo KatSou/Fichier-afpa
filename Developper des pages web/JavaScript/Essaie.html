@@ -1,21 +1,26 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>Intercepte la validation du formulaire</title>
-<script>
-function checkForm(f) {
-alert("Vous vous appelez : " + f.elements['nom'].value + " " +
-f.elements['prenom'].value);
-return false; // do not submit the form
-}
-</script>
-</head>
-<body>
-<h2>Intercepte la validation du formulaire</h2>
-<form id="form1" name="form1" onSubmit="return checkForm(this);">
-<input type="text" name= "nom" value="Dupont" />
-<input type="text" name= "prenom" value="Eric" />
-<input type="submit" id="idSubForm1" name="subForm1" value="Connection" />
-</form>
-</body>
+   
+   <head>
+      <title>Rollover with a Mouse Events</title>
+      
+      <script type="text/javascript">
+         <!--
+            if(document.images){
+               var image1 = new Image(); // Preload an image
+               image1.src = "/images/html.gif";
+               var image2 = new Image(); // Preload second image
+               image2.src = "/images/http.gif";
+            }
+         //-->
+      </script>
+      
+   </head>
+   
+   <body>
+      <p>Move your mouse over the image to see the result</p>
+      
+      <a href="#" onMouseOver="document.myImage.src=image2.src;" onMouseOut="document.myImage.src=image1.src;">
+      <img name="myImage" src="/images/html.gif" />
+      </a>
+   </body>
 </html>

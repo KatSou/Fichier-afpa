@@ -81,5 +81,21 @@ liste.addEventListener("change",affiche);
 
 
 
+// Jquery
+
+$(document).ready(function()
+{
+	$("#Valider").click(function()
+	{
+		$regex = function(controle)
+		{
+			$regcara =/^[A-Za-z]+$/;
+			$regcp =/^((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}$/;
+			$regmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+		}
+	});
 
 
+
+
+});

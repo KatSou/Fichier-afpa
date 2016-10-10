@@ -9,3 +9,14 @@ C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\BDD\bin\Debug\fr\EntityFram
 C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\BDD\obj\Debug\BDD.csprojResolveAssemblyReference.cache
 C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\BDD\obj\Debug\BDD.dll
 C:\Users\afpa\Documents\Fil Rouge\Maquette_fil_rouge\BDD\obj\Debug\BDD.pdb
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\obj\Debug\BDD.csprojResolveAssemblyReference.cache
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\obj\Debug\BDD.dll
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\obj\Debug\BDD.pdb
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\bin\Debug\BDD.dll.config
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\bin\Debug\BDD.dll
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\bin\Debug\BDD.pdb
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\bin\Debug\EntityFramework.dll
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\bin\Debug\EntityFramework.xml
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\afpa\Documents\Fil Rouge\Fil_rouge\BDD\bin\Debug\fr\EntityFramework.resources.dll
